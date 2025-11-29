@@ -1,11 +1,14 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { navlinks } from "@/constants/navlinks";
 import { twMerge } from "tailwind-merge";
 import { usePathname } from "next/navigation";
 import { Separator } from "@/components/ui/separator";
+import { AnimatePresence, motion } from "framer-motion";
+import { isMobile } from "@/lib/utils";
+import { IconLayoutSidebarRightCollapse } from "@tabler/icons-react";
 
 interface Navlink {
   href: string;
@@ -14,11 +17,52 @@ interface Navlink {
 }
 
 const Sidebar = () => {
+  const [sidebarOpen, setSidebarOpen] = useState<null | boolean>(null);
+
+  useEffect(() => {
+    setSidebarOpen(isMobile() ? false : true);
+  }, []);
+
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+
+  return (
+    <>
+      <AnimatePresence>
+        {sidebarOpen && (
+          <motion.div
+            initial={{ x: -220 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.2, ease: "linear" }}
+            exit={{ x: -200 }}
+            className="fixed lg:relative z-100 left-0 top-0 h-screen bg-primary w-75 py-8 text-white border-r border-r-gray-700"
+          >
+            <SidebarContent setSidebarOpen={setSidebarOpen} />
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <button
+        className="fixed bottom-10 right-5 h-12 w-12 bg-gray-50 opacity-90 border border-neutral-800 rounded-full backdrop-blur-sm flex items-center justify-center z-100 cursor-pointer"
+        onClick={() => toggleSidebar()}
+      >
+        <IconLayoutSidebarRightCollapse className="h-6 w-6 text-black" />
+      </button>
+    </>
+  );
+};
+
+export const SidebarContent = ({
+  setSidebarOpen,
+}: {
+  setSidebarOpen: React.Dispatch<React.SetStateAction<null | boolean>>;
+}) => {
   const pathname = usePathname();
   const isActive = (href: string) => pathname === href;
 
   return (
-    <div className="fixed left-0 top-0 h-screen w-80 bg-primary py-8 text-white border-r border-r-gray-700">
+    <>
       <div className="flex items-center gap-2.5 px-10">
         <img
           className="w-14 h-14 rounded-full"
@@ -33,7 +77,7 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <Separator className="my-8 bg-gray-700"/>
+      <Separator className="my-8 bg-gray-700" />
 
       <div className="flex flex-col space-y-1 relative px-10">
         {navlinks.map((link: Navlink) => (
@@ -44,13 +88,14 @@ const Sidebar = () => {
               "text-white hover:text-orange-300 transition duration-200 flex items-center space-x-4 py-2 px-2 rounded-md text-base font-bold",
               isActive(link.href) && "text-orange-300"
             )}
+            onClick={() => isMobile() && setSidebarOpen(false)}
           >
             <link.icon className={twMerge("h-5 w-5")} />
             <span>{link.label}</span>
           </Link>
         ))}
       </div>
-    </div>
+    </>
   );
 };
 
