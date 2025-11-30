@@ -1,11 +1,11 @@
 "use client";
 
-import * as React from "react";
+import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Controller, useForm } from "react-hook-form";
 import * as z from "zod";
 import { Button } from "@/components/ui/button";
-
+import emailjs from "@emailjs/browser";
 import {
   Field,
   FieldDescription,
@@ -20,6 +20,8 @@ import {
   InputGroupText,
   InputGroupTextarea,
 } from "@/components/ui/input-group";
+import { Spinner } from "@/components/ui/spinner";
+import { toast } from "sonner";
 
 const formSchema = z.object({
   name: z.string().min(3, "Adınız en az 3 karakter uzunluğunda olmalıdır."),
@@ -27,10 +29,13 @@ const formSchema = z.object({
   message: z
     .string()
     .min(3, "Mesajınız en az 3 karakter uzunluğunda olmalıdır.")
-    .max(300, "Mesajınız en fazla 300 karakter uzunluğunda olmalıdır."),
+    .max(500, "Mesajınız en fazla 500 karakter uzunluğunda olmalıdır."),
 });
 
 export function ContactForm() {
+  const [loading, setLoading] = useState(false);
+  const [formStartTime] = useState(Date.now());
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -39,10 +44,35 @@ export function ContactForm() {
       message: "",
     },
   });
-  function onSubmit(data: z.infer<typeof formSchema>) {
-    alert("Form gönderme işlemi henüz aktif değil.");
-    console.log(data);
-  }
+
+  const onSubmit = async (data: z.infer<typeof formSchema>) => {
+    const currentTime = Date.now();
+    const elapsed = (currentTime - formStartTime) / 1000;
+
+    if (elapsed < 3) {
+      toast.error(
+        "Bot/Spam engellemesi nedeniyle formu göndermeden önce lütfen birkaç saniye bekleyin."
+      );
+      return;
+    }
+
+    try {
+      setLoading(true);
+      await emailjs.send(
+        "service_fy895fq",
+        "template_0g1r08s",
+        data,
+        "e6moMyfqRFwgdHA3i"
+      );
+
+      toast.success("Mesajınız başarıyla gönderildi!");
+    } catch (error) {
+      console.error("Mail gönderilirken hata oluştu:", error);
+      toast.error("Üzgünüm, mesajınız gönderilemedi. Lütfen tekrar deneyin.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div>
@@ -107,7 +137,7 @@ export function ContactForm() {
                   />
                   <InputGroupAddon align="block-end">
                     <InputGroupText className="tabular-nums">
-                      {field.value?.length}/300 karakter
+                      {field.value?.length}/500 karakter
                     </InputGroupText>
                   </InputGroupAddon>
                 </InputGroup>
@@ -127,7 +157,9 @@ export function ContactForm() {
         <Button type="button" variant="outline" onClick={() => form.reset()}>
           Temizle
         </Button>
-        <Button type="submit" form="contact-form">
+
+        <Button type="submit" form="contact-form" disabled={loading}>
+          {loading && <Spinner />}
           Gönder
         </Button>
       </Field>
