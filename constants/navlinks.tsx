@@ -17,4 +17,9 @@ export const navlinks = [
     label: "Hakkımda",
     icon: IconMessage2,
   },
+  {
+    href: "/contact",
+    label: "İletişim",
+    icon: IconMail,
+  },
 ];

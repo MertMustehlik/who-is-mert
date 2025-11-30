@@ -1,7 +1,7 @@
 "use client";
 
 import { Container } from "./Container";
-import PageTitle from "./PageTitle";
+import { PageTitle } from "./PageTitle";
 import { IconMessage2 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 

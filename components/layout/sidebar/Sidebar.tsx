@@ -85,8 +85,8 @@ export const SidebarContent = ({
             key={link.href}
             href={link.href}
             className={twMerge(
-              "text-white hover:text-orange-300 transition duration-200 flex items-center space-x-4 py-2 px-2 rounded-md text-base font-bold",
-              isActive(link.href) && "text-orange-300"
+              "text-white hover:text-secondary transition duration-200 flex items-center space-x-4 py-2 px-2 rounded-md text-base font-bold",
+              isActive(link.href) && "text-secondary"
             )}
             onClick={() => isMobile() && setSidebarOpen(false)}
           >
