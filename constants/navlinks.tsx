@@ -1,12 +1,12 @@
-import {
-  IconBolt,
-  IconBriefcase2,
-  IconFileCv,
-  IconMail,
-  IconMessage2,
-} from "@tabler/icons-react";
+import { IconBolt, IconMail, IconMessage2 } from "@tabler/icons-react";
 
-export const navlinks = [
+export interface Navlink {
+  href: string;
+  label: string;
+  icon: React.ComponentType<{ className?: string }>;
+}
+
+export const navlinks: Navlink[] = [
   {
     href: "/home",
     label: "Ana Sayfa",

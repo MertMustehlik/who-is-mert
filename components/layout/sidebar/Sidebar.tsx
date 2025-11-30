@@ -3,18 +3,13 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { navlinks } from "@/constants/navlinks";
+import { socialLinks } from "@/constants/socialLinks";
 import { twMerge } from "tailwind-merge";
 import { usePathname } from "next/navigation";
 import { Separator } from "@/components/ui/separator";
 import { AnimatePresence, motion } from "framer-motion";
 import { isMobile } from "@/lib/utils";
 import { IconLayoutSidebarRightCollapse } from "@tabler/icons-react";
-
-interface Navlink {
-  href: string;
-  label: string;
-  icon: React.ComponentType<{ className?: string }>;
-}
 
 const Sidebar = () => {
   const [sidebarOpen, setSidebarOpen] = useState<null | boolean>(null);
@@ -80,7 +75,7 @@ export const SidebarContent = ({
       <Separator className="my-8 bg-gray-700" />
 
       <div className="flex flex-col space-y-1 relative px-10">
-        {navlinks.map((link: Navlink) => (
+        {navlinks.map((link) => (
           <Link
             key={link.href}
             href={link.href}
@@ -89,6 +84,22 @@ export const SidebarContent = ({
               isActive(link.href) && "text-secondary"
             )}
             onClick={() => isMobile() && setSidebarOpen(false)}
+          >
+            <link.icon className={twMerge("h-5 w-5")} />
+            <span>{link.label}</span>
+          </Link>
+        ))}
+      </div>
+
+      <div className="flex flex-col space-y-1 relative px-10 mt-4">
+        <div className="text-white font-bold text-sm p-2">Bağlantılar</div>
+
+        {socialLinks.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className="text-white hover:text-secondary transition duration-200 flex items-center space-x-4 py-2 px-2 rounded-md text-base font-bold"
+            target="_blank"
           >
             <link.icon className={twMerge("h-5 w-5")} />
             <span>{link.label}</span>
