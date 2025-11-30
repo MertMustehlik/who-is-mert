@@ -8,9 +8,9 @@ interface FooterProps {
 export default function Footer({ variant = "default" }: FooterProps) {
   const variants = {
     default:
-      "w-full bg-gray-100 py-5 text-center text-xs text-gray-500 border-t",
+      "w-full bg-background py-5 text-center text-xs text-gray-500 border-t dark:border-t-gray-700",
     primary:
-      "w-full py-5 bg-primary text-center text-xs text-gray-400 border-t border-t-gray-700",
+      "w-full py-5 bg-sidebar dark:bg-background text-center text-xs text-gray-400 border-t border-t-gray-700",
   };
 
   const linkedin = socialLinks.find((link) => link.type === "linkedin");

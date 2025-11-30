@@ -10,6 +10,9 @@ import { Separator } from "@/components/ui/separator";
 import { AnimatePresence, motion } from "framer-motion";
 import { isMobile } from "@/lib/utils";
 import { IconLayoutSidebarRightCollapse } from "@tabler/icons-react";
+import { useTheme } from "next-themes";
+import { ModeToggle } from "@/components/ModeToggle";
+import { Button } from "@/components/ui/button";
 
 const Sidebar = () => {
   const [sidebarOpen, setSidebarOpen] = useState<null | boolean>(null);
@@ -22,6 +25,8 @@ const Sidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
 
+  const { setTheme } = useTheme();
+
   return (
     <>
       <AnimatePresence>
@@ -31,19 +36,22 @@ const Sidebar = () => {
             animate={{ x: 0 }}
             transition={{ duration: 0.2, ease: "linear" }}
             exit={{ x: -200 }}
-            className="fixed lg:relative z-100 left-0 top-0 h-screen bg-primary w-75 py-8 text-white border-r border-r-gray-700"
+            className="fixed lg:relative z-100 left-0 top-0 h-screen bg-sidebar w-75 py-8 text-white border-r border-r-gray-700"
           >
             <SidebarContent setSidebarOpen={setSidebarOpen} />
           </motion.div>
         )}
       </AnimatePresence>
 
-      <button
-        className="fixed bottom-10 right-5 h-12 w-12 bg-gray-50 opacity-90 border border-neutral-800 rounded-full backdrop-blur-sm flex items-center justify-center z-100 cursor-pointer"
+      <Button
+        variant="outline"
+        size="icon"
+        className="fixed bottom-25 right-5 h-12 w-12 rounded-full z-50 cursor-pointer"
         onClick={() => toggleSidebar()}
       >
-        <IconLayoutSidebarRightCollapse className="h-6 w-6 text-black" />
-      </button>
+        <IconLayoutSidebarRightCollapse className="h-6 w-6 text-secondary-foreground" />
+      </Button>
+      <ModeToggle />
     </>
   );
 };
@@ -80,8 +88,8 @@ export const SidebarContent = ({
             key={link.href}
             href={link.href}
             className={twMerge(
-              "text-white hover:text-secondary transition duration-200 flex items-center space-x-4 py-2 px-2 rounded-md text-base font-bold",
-              isActive(link.href) && "text-secondary"
+              "text-sidebar-foreground hover:text-sidebar-primary transition duration-200 flex items-center space-x-4 py-2 px-2 rounded-md text-base font-bold",
+              isActive(link.href) && "text-sidebar-primary"
             )}
             onClick={() => isMobile() && setSidebarOpen(false)}
           >
@@ -98,7 +106,10 @@ export const SidebarContent = ({
           <Link
             key={link.href}
             href={link.href}
-            className="text-white hover:text-secondary transition duration-200 flex items-center space-x-4 py-2 px-2 rounded-md text-base font-bold"
+            className={twMerge(
+              "text-white hover:text-sidebar-primary transition duration-200 flex items-center space-x-4 py-2 px-2 rounded-md text-base font-bold",
+              isActive(link.href) && "text-sidebar-primary"
+            )}
             target="_blank"
           >
             <link.icon className={twMerge("h-5 w-5")} />

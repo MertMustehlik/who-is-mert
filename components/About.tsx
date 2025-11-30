@@ -45,7 +45,7 @@ export default function About() {
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.8 }}
               key={skill.name}
-              className="rounded-lg bg-gray-50 shadow-md w-full p-4 flex flex-col items-center justify-between gap-2"
+              className="rounded-lg bg-secondary text-secondary-foreground shadow-md w-full p-4 flex flex-col items-center justify-between gap-2"
             >
               <div className="flex-1 flex items-center justify-center p-1">
                 <img

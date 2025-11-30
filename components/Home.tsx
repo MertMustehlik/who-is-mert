@@ -21,7 +21,7 @@ export default function Home() {
   };
 
   return (
-    <div className="relative h-screen flex items-center justify-center bg-primary">
+    <div className="relative h-screen flex items-center justify-center bg-primary dark:bg-background">
       <InteractiveBackground />
 
       <Container>

@@ -16,9 +16,9 @@ export default function RootLayout({
   return (
     <div className="h-screen flex">
       <Sidebar />
-      <main className="flex-1 overflow-y-auto bg-gray-100 flex flex-col justify-between">
+      <main className="flex-1 overflow-y-auto bg-background flex flex-col justify-between">
         {children}
-        <Footer variant={pathname == "/home" ? "primary" : "default"} />
+        <Footer variant={pathname === "/home" ? "primary" : "default"} />
       </main>
     </div>
   );
