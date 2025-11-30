@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Container } from "./Container";
 import { Button } from "@/components/ui/button";
 import { IconFileCv } from "@tabler/icons-react";
+import { socialLinks } from "@/constants/socialLinks";
 import {
   Tooltip,
   TooltipContent,
@@ -51,20 +52,16 @@ export default function Home() {
             </p>
           </div>
           <div className="flex gap-2">
-            <Link
-              href={profile.social.linkedin}
-              className="hover:text-orange-300 text-white px-2 py-2 rounded flex items-center gap-2"
-              target="_blank"
-            >
-              <IconBrandLinkedin />
-            </Link>
-            <Link
-              href={profile.social.github}
-              className="hover:text-orange-300 text-white px-2 py-2 rounded flex items-center gap-2"
-              target="_blank"
-            >
-              <IconBrandGithub />
-            </Link>
+            {socialLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="hover:text-orange-300 text-white px-2 py-2 rounded flex items-center gap-2"
+                target="_blank"
+              >
+                <link.icon />
+              </Link>
+            ))}
           </div>
           <Tooltip>
             <TooltipTrigger asChild>
