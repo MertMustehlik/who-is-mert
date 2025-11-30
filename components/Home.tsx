@@ -16,14 +16,8 @@ import {
 export default function Home() {
   const profile = {
     name: "Mert Müstehlik",
-    avatar:
-      "https://media.licdn.com/dms/image/v2/D4D03AQGSf_QA-ie4iA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1693833276878?e=1766016000&v=beta&t=UxhoMBRCG1LVJySWG8h3sw1bqMmOV2tAGJAxoYVfRjM",
-    titles: ["Software Developer", "Laravel Developer", "Full Stack Developer"],
-    social: {
-      linkedin: "https://www.linkedin.com/in/mert-müstehlik-778233222/",
-      github: "https://github.com/MertMustehlik",
-      email: "mailto:mertmustehlik@hotmail.com",
-    },
+    avatar: "images/avatar.jpeg",
+    titles: ["Software Developer", "Laravel Developer", "Full Stack Developer"]
   };
 
   return (

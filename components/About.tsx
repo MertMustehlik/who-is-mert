@@ -9,25 +9,25 @@ export default function About() {
   const skills = [
     {
       name: "Laravel",
-      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1154px-Laravel.svg.png",
+      icon: "images/skills/laravel.png",
     },
     {
       name: "PHP",
-      icon: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
+      icon: "images/skills/php.png",
     },
     {
-      name: "React",
-      icon: "https://images.seeklogo.com/logo-png/25/1/javascript-logo-png_seeklogo-255387.png",
+      name: "JavaScript",
+      icon: "images/skills/js.png",
     },
 
     {
       name: "Next.js",
-      icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMklBUVBX0yV0l3hIdTIxP-luLdoRYZAzvbA&s",
+      icon: "images/skills/next-js.png",
     },
 
     {
       name: "JQuery",
-      icon: "https://miro.medium.com/v2/0*eFomJUFua8tuqe8g.png",
+      icon: "images/skills/jquery.png",
     },
   ];
 

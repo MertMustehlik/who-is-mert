@@ -61,7 +61,7 @@ export const SidebarContent = ({
       <div className="flex items-center gap-2.5 px-10">
         <img
           className="w-14 h-14 rounded-full"
-          src="https://media.licdn.com/dms/image/v2/D4D03AQGSf_QA-ie4iA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1693833276878?e=1766016000&v=beta&t=UxhoMBRCG1LVJySWG8h3sw1bqMmOV2tAGJAxoYVfRjM"
+          src="images/avatar.jpeg"
           alt=""
         />
         <div className="font-medium text-heading">
