@@ -10,10 +10,14 @@ import {
 import { setLocale } from "@/lib/locale";
 import { GB, TR } from "country-flag-icons/react/3x2";
 import { useLocale } from "next-intl";
+import { useRouter } from "next/navigation";
 
 export function LanguageToggle() {
+  const router = useRouter();
+
   const changeLocale = async (locale: string) => {
     await setLocale(locale);
+    router.refresh();
   };
 
   return (
