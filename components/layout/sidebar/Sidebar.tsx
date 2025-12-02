@@ -10,9 +10,10 @@ import { Separator } from "@/components/ui/separator";
 import { AnimatePresence, motion } from "framer-motion";
 import { isMobile } from "@/lib/utils";
 import { IconLayoutSidebarRightCollapse } from "@tabler/icons-react";
-import { useTheme } from "next-themes";
 import { ModeToggle } from "@/components/ModeToggle";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
+import { LanguageToggle } from "@/components/LanguageToggle";
 
 const Sidebar = () => {
   const [sidebarOpen, setSidebarOpen] = useState<null | boolean>(null);
@@ -24,8 +25,6 @@ const Sidebar = () => {
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
-
-  const { setTheme } = useTheme();
 
   return (
     <>
@@ -46,12 +45,13 @@ const Sidebar = () => {
       <Button
         variant="outline"
         size="icon"
-        className="fixed bottom-25 right-5 h-12 w-12 rounded-full z-50 cursor-pointer"
+        className="fixed bottom-40 right-5 h-12 w-12 rounded-full z-50 cursor-pointer"
         onClick={() => toggleSidebar()}
       >
         <IconLayoutSidebarRightCollapse className="h-6 w-6 text-secondary-foreground" />
       </Button>
       <ModeToggle />
+      <LanguageToggle />
     </>
   );
 };
@@ -63,6 +63,8 @@ export const SidebarContent = ({
 }) => {
   const pathname = usePathname();
   const isActive = (href: string) => pathname === href;
+
+  const { t } = useTranslation();
 
   return (
     <>
@@ -94,13 +96,15 @@ export const SidebarContent = ({
             onClick={() => isMobile() && setSidebarOpen(false)}
           >
             <link.icon className={twMerge("h-5 w-5")} />
-            <span>{link.label}</span>
+            <span>{t(`sidebar.${link.label}`)}</span>
           </Link>
         ))}
       </div>
 
       <div className="flex flex-col space-y-1 relative px-10 mt-4">
-        <div className="text-white font-bold text-sm p-2">Bağlantılar</div>
+        <div className="text-white font-bold text-sm p-2">
+          {t("sidebar.links")}
+        </div>
 
         {socialLinks.map((link) => (
           <Link

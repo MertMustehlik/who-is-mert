@@ -1,0 +1,118 @@
+{
+  "download_resume": "Download Resume",
+  "download_is_not_yet_active_it_will_be_added_soon": "Download is not active yet, it will be added soon.",
+  "sidebar": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "links": "Links"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "about_page": {
+    "about_me": "About Me",
+    "intro": "Hello, I'm Mert Müstehlik. I started my software career by developing CRM, ERP, and corporate web projects in my early years. During this process, I gained strong foundations in role-based authorization, data flows, integrations, and corporate business processes. I also gained experience in frontend development using Laravel Blade and Vue.js, contributing actively to both backend and frontend.",
+    "projects": "Over time, I participated in larger and more complex projects, developing RESTful APIs, GraphQL services, high-traffic architectures, and user-focused admin panels. I work with Laravel, PostgreSQL, MySQL, MongoDB, Redis, and various modern web tools, designing modules end-to-end from analysis to development, optimization, and deployment.",
+    "approach": "My working approach is based on clean code, correct architectural decisions, consistent data models, performance-focused solutions, and continuous learning. In every project, I aim to develop sustainable, scalable, and truly valuable software.",
+    "motivation": "What motivates me most in software is seeing an idea turn into a real product with code. Witnessing an application making an impact in people's lives brings me joy and drives me to approach the next project with more excitement. Every piece of work I produce strengthens this passion."
+  },
+  "contact_page": {
+    "contact": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "message_field_desc": "You can write the message you want to send here. I will do my best to respond as soon as possible.",
+    "character": "Character",
+    "success_message": "Your message has been sent successfully!",
+    "error_message": "Sorry, your message could not be sent. Please try again."
+  },
+  "form": {
+    "enter_field": "Enter {{field}}",
+    "bot_spam_alert": "Due to bot/spam protection, please wait a few seconds before submitting the form."
+  },
+  "buttons": {
+    "submit": "Submit",
+    "clear": "Clear"
+  },
+  "validation": {
+    "accepted": "{{attribute}} must be accepted.",
+    "accepted_if": "{{attribute}} must be accepted when {{other}} is {{value}}.",
+    "active_url": "{{attribute}} must be a valid URL.",
+    "after": "{{attribute}} must be a date after {{date}}.",
+    "after_or_equal": "{{attribute}} must be a date equal to or after {{date}}.",
+    "alpha": "{{attribute}} may only contain letters.",
+    "alpha_dash": "{{attribute}} may only contain letters, numbers, dashes, and underscores.",
+    "alpha_num": "{{attribute}} may only contain letters and numbers.",
+    "array": "{{attribute}} must be an array.",
+    "boolean": "{{attribute}} must be true or false.",
+    "confirmed": "{{attribute}} confirmation does not match.",
+    "date": "{{attribute}} must be a valid date.",
+    "date_format": "{{attribute}} must match the format {{format}}.",
+    "decimal": "{{attribute}} must have {{decimal}} decimal places.",
+    "different": "{{attribute}} and {{other}} must be different.",
+    "digits": "{{attribute}} must be {{digits}} digits.",
+    "digits_between": "{{attribute}} must be between {{min}} and {{max}} digits.",
+    "email": "{{attribute}} must be a valid email address.",
+    "ends_with": "{{attribute}} must end with one of the following: {{values}}",
+    "exists": "The selected {{attribute}} is invalid.",
+    "file": "{{attribute}} must be a file.",
+    "filled": "{{attribute}} must have a value.",
+    "gt": {
+      "numeric": "{{attribute}} must be greater than {{value}}.",
+      "file": "{{attribute}} must be greater than {{value}} kilobytes.",
+      "string": "{{attribute}} must be greater than {{value}} characters.",
+      "array": "{{attribute}} must have more than {{value}} items."
+    },
+    "gte": {
+      "numeric": "{{attribute}} must be greater than or equal to {{value}}.",
+      "file": "{{attribute}} must be greater than or equal to {{value}} kilobytes.",
+      "string": "{{attribute}} must be greater than or equal to {{value}} characters.",
+      "array": "{{attribute}} must have {{value}} items or more."
+    },
+    "image": "{{attribute}} must be an image.",
+    "in": "The selected {{attribute}} is invalid.",
+    "integer": "{{attribute}} must be an integer.",
+    "ip": "{{attribute}} must be a valid IP address.",
+    "ipv4": "{{attribute}} must be a valid IPv4 address.",
+    "ipv6": "{{attribute}} must be a valid IPv6 address.",
+    "json": "{{attribute}} must be a valid JSON string.",
+    "max": {
+      "numeric": "{{attribute}} may not be greater than {{max}}.",
+      "file": "{{attribute}} may not be greater than {{max}} kilobytes.",
+      "string": "{{attribute}} may not be greater than {{max}} characters.",
+      "array": "{{attribute}} may not have more than {{max}} items."
+    },
+    "min": {
+      "numeric": "{{attribute}} must be at least {{min}}.",
+      "file": "{{attribute}} must be at least {{min}} kilobytes.",
+      "string": "{{attribute}} must be at least {{min}} characters.",
+      "array": "{{attribute}} must have at least {{min}} items."
+    },
+    "not_in": "The selected {{attribute}} is invalid.",
+    "numeric": "{{attribute}} must be a number.",
+    "password": {
+      "letters": "{{attribute}} must contain at least one letter.",
+      "mixed": "{{attribute}} must contain at least one uppercase and one lowercase letter.",
+      "numbers": "{{attribute}} must contain at least one number.",
+      "symbols": "{{attribute}} must contain at least one symbol.",
+      "uncompromised": "The given {{attribute}} has appeared in a data leak. Please choose a different {{attribute}}."
+    },
+    "present": "{{attribute}} must be present.",
+    "regex": "{{attribute}} format is invalid.",
+    "required": "{{attribute}} is required.",
+    "same": "{{attribute}} and {{other}} must match.",
+    "size": {
+      "numeric": "{{attribute}} must be {{size}}.",
+      "file": "{{attribute}} must be {{size}} kilobytes.",
+      "string": "{{attribute}} must be {{size}} characters.",
+      "array": "{{attribute}} must contain {{size}} items."
+    },
+    "string": "{{attribute}} must be a string.",
+    "timezone": "{{attribute}} must be a valid timezone.",
+    "unique": "{{attribute}} has already been taken.",
+    "url": "{{attribute}} must be a valid URL."
+  }
+}

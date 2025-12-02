@@ -22,19 +22,41 @@ import {
 } from "@/components/ui/input-group";
 import { Spinner } from "@/components/ui/spinner";
 import { toast } from "sonner";
-
-const formSchema = z.object({
-  name: z.string().min(3, "Adınız en az 3 karakter uzunluğunda olmalıdır."),
-  email: z.email("Geçersiz e-posta adresi."),
-  message: z
-    .string()
-    .min(3, "Mesajınız en az 3 karakter uzunluğunda olmalıdır.")
-    .max(500, "Mesajınız en fazla 500 karakter uzunluğunda olmalıdır."),
-});
+import { useTranslation } from "react-i18next";
 
 export function ContactForm() {
+  const { t } = useTranslation();
   const [loading, setLoading] = useState(false);
   const [formStartTime] = useState(Date.now());
+
+  const formSchema = z.object({
+    name: z.string().min(
+      3,
+      t("validation.min.string", {
+        attribute: t("contact_page.name"),
+        min: 3,
+      })
+    ),
+    email: z.email(
+      t("validation.email", { attribute: t("contact_page.email") })
+    ),
+    message: z
+      .string()
+      .min(
+        3,
+        t("validation.min.string", {
+          attribute: t("contact_page.message"),
+          min: 3,
+        })
+      )
+      .max(
+        500,
+        t("validation.max.string", {
+          attribute: t("contact_page.message"),
+          max: 500,
+        })
+      ),
+  });
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -44,15 +66,12 @@ export function ContactForm() {
       message: "",
     },
   });
-
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     const currentTime = Date.now();
     const elapsed = (currentTime - formStartTime) / 1000;
 
     if (elapsed < 3) {
-      toast.error(
-        "Bot/Spam engellemesi nedeniyle formu göndermeden önce lütfen birkaç saniye bekleyin."
-      );
+      toast.error(t("Form.bot_spam_alert"));
       return;
     }
 
@@ -65,10 +84,9 @@ export function ContactForm() {
         "e6moMyfqRFwgdHA3i"
       );
 
-      toast.success("Mesajınız başarıyla gönderildi!");
+      toast.success(t("ContactPage.success_message"));
     } catch (error) {
-      console.error("Mail gönderilirken hata oluştu:", error);
-      toast.error("Üzgünüm, mesajınız gönderilemedi. Lütfen tekrar deneyin.");
+      toast.error(t("ContactPage.error_message"));
     } finally {
       setLoading(false);
     }
@@ -84,12 +102,16 @@ export function ContactForm() {
               control={form.control}
               render={({ field, fieldState }) => (
                 <Field data-invalid={fieldState.invalid}>
-                  <FieldLabel htmlFor="contact-form-name">Adınız</FieldLabel>
+                  <FieldLabel htmlFor="contact-form-name">
+                    {t("contact_page.name")}
+                  </FieldLabel>
                   <Input
                     {...field}
                     id="contact-form-name"
                     aria-invalid={fieldState.invalid}
-                    placeholder="Ad soyad giriniz"
+                    placeholder={t("form.enter_field", {
+                      field: t("contact_page.name"),
+                    })}
                     autoComplete="off"
                   />
                   {fieldState.invalid && (
@@ -103,12 +125,16 @@ export function ContactForm() {
               control={form.control}
               render={({ field, fieldState }) => (
                 <Field data-invalid={fieldState.invalid}>
-                  <FieldLabel htmlFor="contact-form-email">E-Posta</FieldLabel>
+                  <FieldLabel htmlFor="contact-form-email">
+                    {t("contact_page.email")}
+                  </FieldLabel>
                   <Input
                     {...field}
                     id="contact-form-email"
                     aria-invalid={fieldState.invalid}
-                    placeholder="E-posta giriniz"
+                    placeholder={t("form.enter_field", {
+                      field: t("contact_page.email"),
+                    })}
                     autoComplete="off"
                   />
                   {fieldState.invalid && (
@@ -124,26 +150,28 @@ export function ContactForm() {
             render={({ field, fieldState }) => (
               <Field data-invalid={fieldState.invalid}>
                 <FieldLabel htmlFor="contact-form-message">
-                  Mesajınız
+                  {t("contact_page.message")}
                 </FieldLabel>
                 <InputGroup>
                   <InputGroupTextarea
                     {...field}
                     id="contact-form-message"
-                    placeholder="Mesajınızı yazınız"
+                    placeholder={t("form.enter_field", {
+                      field: t("contact_page.message"),
+                    })}
                     rows={6}
                     className="min-h-24 resize-none"
                     aria-invalid={fieldState.invalid}
                   />
                   <InputGroupAddon align="block-end">
                     <InputGroupText className="tabular-nums">
-                      {field.value?.length}/500 karakter
+                      {field.value?.length}/500{" "}
+                      {t("contact_page.character").toLowerCase()}
                     </InputGroupText>
                   </InputGroupAddon>
                 </InputGroup>
                 <FieldDescription>
-                  İletmek istediğiniz mesajı buraya yazabilirsiniz. Size mümkün
-                  olan en kısa sürede dönüş yapmaya özen göstereceğim.
+                  {t("contact_page.message_field_desc")}
                 </FieldDescription>
                 {fieldState.invalid && (
                   <FieldError errors={[fieldState.error]} />
@@ -155,12 +183,12 @@ export function ContactForm() {
       </form>
       <Field orientation="horizontal" className="mt-6">
         <Button type="button" variant="outline" onClick={() => form.reset()}>
-          Temizle
+          {t("buttons.clear")}
         </Button>
 
         <Button type="submit" form="contact-form" disabled={loading}>
           {loading && <Spinner />}
-          Gönder
+          {t("buttons.submit")}
         </Button>
       </Field>
     </div>
