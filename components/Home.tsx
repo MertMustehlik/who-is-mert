@@ -12,8 +12,11 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+  const { t } = useTranslation();
+
   const profile = {
     name: "Mert Müstehlik",
     avatar: "images/avatar.jpeg",
@@ -60,7 +63,7 @@ export default function Home() {
           <Tooltip>
             <TooltipTrigger asChild>
               <Button variant="outline">
-                <IconFileCv /> Özgeçmişi İndir
+                <IconFileCv /> {t("download_resume")}
               </Button>
             </TooltipTrigger>
             <TooltipContent>

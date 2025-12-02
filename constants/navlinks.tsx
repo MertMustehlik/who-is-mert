@@ -9,17 +9,17 @@ export interface Navlink {
 export const navlinks: Navlink[] = [
   {
     href: "/home",
-    label: "Ana Sayfa",
+    label: "home",
     icon: IconBolt,
   },
   {
     href: "/about",
-    label: "Hakkımda",
+    label: "about",
     icon: IconMessage2,
   },
   {
     href: "/contact",
-    label: "İletişim",
+    label: "contact",
     icon: IconMail,
   },
 ];
