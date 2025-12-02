@@ -11,8 +11,6 @@ export default function RootLayout({
 }) {
   const pathname = usePathname();
 
-  console.log(pathname);
-
   return (
     <div className="h-screen flex">
       <Sidebar />

@@ -4,8 +4,11 @@ import { Container } from "./Container";
 import { PageTitle } from "./PageTitle";
 import { IconMessage2 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function About() {
+  const t = useTranslations("about_page");
+  
   const skills = [
     {
       name: "Laravel",
@@ -35,9 +38,10 @@ export default function About() {
     },
   ];
 
+
   return (
     <Container>
-      <PageTitle title="Hakkımda" icon={<IconMessage2 size="32" />} />
+      <PageTitle title={t("about_me")} icon={<IconMessage2 size="32" />} />
       <div className="mt-8">
         <div className="grid grid-cols-3 md:grid-cols-6 gap-10 my-10">
           {skills.map((skill) => (
@@ -63,35 +67,10 @@ export default function About() {
         </div>
 
         <div>
-          <p className="mb-4">
-            Merhaba, ben Mert Müstehlik. Yazılım kariyerime ilk yıllarımda CRM,
-            ERP ve kurumsal web projeleri geliştirerek başladım. Bu süreçte rol
-            bazlı yetkilendirme, veri akışları, entegrasyonlar ve kurumsal iş
-            süreçleri gibi konularda güçlü bir temel edindim. Aynı zamanda
-            Laravel Blade ve Vue.js ile arayüz geliştirme deneyimi kazanarak hem
-            backend hem de frontend taraflarında aktif rol aldım.
-          </p>
-          <p className="mb-4">
-            Zamanla daha büyük ve kapsamlı projelerde yer alarak RESTful
-            API’ler, GraphQL servisleri, yüksek trafikli mimariler ve kullanıcı
-            odaklı yönetim panelleri geliştirdim. Laravel, PostgreSQL, MySQL,
-            MongoDB, Redis ve çeşitli modern web araçlarıyla çalışıyor; ihtiyaç
-            duyulan modülleri analiz aşamasından geliştirme, optimizasyon ve
-            dağıtıma kadar uçtan uca tasarlıyorum.
-          </p>
-          <p className="mb-4">
-            Çalışma yaklaşımım; temiz kod, doğru mimari kararlar, tutarlı veri
-            modelleri, performans odaklı çözümler ve sürekli öğrenme prensipleri
-            üzerine kurulu. Her projede sürdürülebilir, ölçeklenebilir ve
-            gerçekten değer üreten yazılımlar geliştirmeyi hedefliyorum.
-          </p>
-          <p className="mb-4">
-            Yazılımda beni en çok motive eden şey, bir fikrin kodla birlikte
-            gerçek bir ürüne dönüşmesi. Ortaya çıkan bir uygulamanın insanların
-            hayatında karşılık bulduğunu görmek hem beni mutlu ediyor hem de
-            sonraki projeler için daha fazla heyecanlandırıyor. Ürettiğim her
-            iş, bu tutkuyu daha da güçlendiriyor.
-          </p>
+          <p className="mb-4">{t("intro")}</p>
+          <p className="mb-4">{t("projects")}</p>
+          <p className="mb-4">{t("approach")}</p>
+          <p className="mb-4">{t("motivation")}</p>
         </div>
       </div>
     </Container>

@@ -7,6 +7,7 @@ import { Container } from "./Container";
 import { Button } from "@/components/ui/button";
 import { IconFileCv } from "@tabler/icons-react";
 import { socialLinks } from "@/constants/socialLinks";
+import { useTranslations } from "next-intl";
 import {
   Tooltip,
   TooltipContent,
@@ -14,10 +15,11 @@ import {
 } from "@/components/ui/tooltip";
 
 export default function Home() {
+  const t = useTranslations();
   const profile = {
     name: "Mert Müstehlik",
     avatar: "images/avatar.jpeg",
-    titles: ["Software Developer", "Laravel Developer", "Full Stack Developer"]
+    titles: ["Software Developer", "Laravel Developer", "Full Stack Developer"],
   };
 
   return (
@@ -60,11 +62,11 @@ export default function Home() {
           <Tooltip>
             <TooltipTrigger asChild>
               <Button variant="outline">
-                <IconFileCv /> Özgeçmişi İndir
+                <IconFileCv /> {t("download_resume")}
               </Button>
             </TooltipTrigger>
             <TooltipContent>
-              <p>Henüz indirme aktif değil, yakında eklenecek.</p>
+              <p>{t("download_is_not_yet_active_it_will_be_added_soon")}</p>
             </TooltipContent>
           </Tooltip>
         </div>
