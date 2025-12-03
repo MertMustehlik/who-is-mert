@@ -84,9 +84,10 @@ export function ContactForm() {
         "e6moMyfqRFwgdHA3i"
       );
 
-      toast.success(t("ContactPage.success_message"));
+      form.reset();
+      toast.success(t("contact_page.success_message"));
     } catch (error) {
-      toast.error(t("ContactPage.error_message"));
+      toast.error(t("contact_page.error_message"));
     } finally {
       setLoading(false);
     }
