@@ -14,7 +14,7 @@ export function downloadResume(locale: "tr" | "en" = "tr") {
   const fileName =
     locale === "tr" ? "mert_mustehlik_resume_tr.pdf" : "mert_mustehlik_resume_en.pdf";
   const link = document.createElement("a");
-  link.href = `/resumes/${fileName}`;
+  link.href = `/who-is-mert/resumes/${fileName}`;
   link.download = fileName;
   document.body.appendChild(link);
   link.click();
