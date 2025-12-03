@@ -1,18 +1,11 @@
 "use client";
 import InteractiveBackground from "@/components/InteractiveBackground";
 import { Typewriter } from "react-simple-typewriter";
-import { IconBrandLinkedin, IconBrandGithub } from "@tabler/icons-react";
 import Link from "next/link";
-import { Container } from "./Container";
-import { Button } from "@/components/ui/button";
-import { IconFileCv } from "@tabler/icons-react";
+import { Container } from "@/components/Container";
 import { socialLinks } from "@/constants/socialLinks";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 import { useTranslation } from "react-i18next";
+import { DownloadResume } from "@/components/DownloadResume";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -20,7 +13,7 @@ export default function Home() {
   const profile = {
     name: "Mert Müstehlik",
     avatar: "images/avatar.jpeg",
-    titles: ["Software Developer", "Laravel Developer", "Full Stack Developer"]
+    titles: ["Software Developer", "Laravel Developer", "Full Stack Developer"],
   };
 
   return (
@@ -60,16 +53,7 @@ export default function Home() {
               </Link>
             ))}
           </div>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <Button variant="outline">
-                <IconFileCv /> {t("download_resume")}
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>Henüz indirme aktif değil, yakında eklenecek.</p>
-            </TooltipContent>
-          </Tooltip>
+          <DownloadResume />
         </div>
       </Container>
     </div>
