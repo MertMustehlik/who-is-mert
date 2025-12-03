@@ -12,7 +12,7 @@ export function isMobile() {
 
 export function downloadResume(locale: "tr" | "en" = "tr") {
   const fileName =
-    locale === "tr" ? "mert_mustehlik_cv_tr.pdf" : "mert_mustehlik_cv_en.pdf";
+    locale === "tr" ? "mert_mustehlik_resume_tr.pdf" : "mert_mustehlik_resume_en.pdf";
   const link = document.createElement("a");
   link.href = `/resumes/${fileName}`;
   link.download = fileName;
