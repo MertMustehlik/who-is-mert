@@ -52,13 +52,13 @@ export function ExperienceItem({
       {description.length > 0 && (
         <Separator className="my-2" />
       )}
-      <p className="mb-4 text-base font-normal text-body">
+      <div className="mb-4 text-base font-normal text-body">
         {description.map((desc, index) => (
           <p key={index} className="mb-2 whitespace-pre-line">
             {t(desc)}
           </p>
         ))}
-      </p>
+      </div>
     </li>
   );
 }

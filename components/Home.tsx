@@ -6,6 +6,7 @@ import { Container } from "@/components/Container";
 import { socialLinks } from "@/constants/socialLinks";
 import { useTranslation } from "react-i18next";
 import { DownloadResume } from "@/components/DownloadResume";
+import Image from "next/image";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -22,10 +23,12 @@ export default function Home() {
 
       <Container>
         <div className="flex justify-center items-center gap-4 flex-col">
-          <img
-            className="w-32 h-32 rounded-full"
+          <Image
             src={profile.avatar}
             alt="Avatar"
+            width={100}
+            height={100}
+            className="w-32 h-32 rounded-full"
           />
           <div>
             <h1 className="text-white text-4xl font-bold">{profile.name} 👋</h1>

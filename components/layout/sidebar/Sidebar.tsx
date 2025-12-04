@@ -14,6 +14,7 @@ import { ModeToggle } from "@/components/ModeToggle";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import { LanguageToggle } from "@/components/LanguageToggle";
+import Image from "next/image";
 
 const Sidebar = () => {
   const [sidebarOpen, setSidebarOpen] = useState<null | boolean>(null);
@@ -69,10 +70,12 @@ export const SidebarContent = ({
   return (
     <>
       <div className="flex items-center gap-2.5 px-10">
-        <img
+        <Image
           className="w-14 h-14 rounded-full"
           src="images/avatar.jpeg"
-          alt=""
+          alt="Avatar"
+          width={100}
+          height={100}
         />
         <div className="font-medium text-heading">
           <div>Mert MÜSTEHLİK</div>

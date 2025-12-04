@@ -6,6 +6,7 @@ import { IconMessage2, IconBriefcase } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Experiences from "@/components/Experiences";
+import Image from "next/image";
 
 export default function About() {
   const { t } = useTranslation();
@@ -35,7 +36,7 @@ export default function About() {
     },
     {
       name: "PostgreSQL",
-      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1163px-Postgresql_elephant.svg.png",
+      icon: "images/skills/postgresql.png",
     },
   ];
 
@@ -55,12 +56,7 @@ export default function About() {
               className="rounded-lg bg-secondary text-secondary-foreground shadow-md w-full p-4 flex flex-col items-center justify-between gap-2"
             >
               <div className="flex-1 flex items-center justify-center p-1">
-                <img
-                  src={skill.icon}
-                  alt={skill.name}
-                  width={100}
-                  height={100}
-                />
+                <Image src={skill.icon} alt={skill.name} width={100} height={100} />
               </div>
               <div className="w-full h-5 text-xs font-mono flex justify-center">
                 {skill.name}
