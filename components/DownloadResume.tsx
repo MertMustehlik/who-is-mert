@@ -18,7 +18,7 @@ export function DownloadResume() {
         <Button
           variant="outline"
           onClick={() => downloadResume("tr")}
-          className="flex items-center gap-2 justify-center w-40"
+          className="flex items-center gap-2 justify-center w-40 cursor-pointer"
         >
           <TR className="w-5 h-5" /> Özgeçmiş TR
         </Button>
@@ -26,7 +26,7 @@ export function DownloadResume() {
         <Button
           variant="outline"
           onClick={() => downloadResume("en")}
-          className="flex items-center gap-2 justify-center w-40"
+          className="flex items-center gap-2 justify-center w-40 cursor-pointer"
         >
           <GB className="w-5 h-5" /> Resume EN
         </Button>

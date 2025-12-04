@@ -1,7 +1,7 @@
 export default {
     i18n: {
-        defaultLocale: 'en',
-        locales: ['en', 'tr'],
+        defaultLocale: 'tr',
+        locales: ['tr', 'en'],
         localeDetection: false,
     },
     fallbackLng: 'tr',
