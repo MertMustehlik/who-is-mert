@@ -4,7 +4,7 @@
   "experience_crm_erp_cms": "CRM, ERP ve CMS projelerinin geliştirilme süreçlerinde aktif görev aldım.",
   "contribution_to_laravel_backend_modules_and_integrations": "Laravel ile kullanıcı rolleri, yetkilendirme, veri yönetimi, e-fatura ve sanal POS entegrasyonları gibi modüllerin geliştirilmesine katkı sağladım.",
   "laravel_api_realtime_admin_vue_development": "Laravel ile RESTful ve GraphQL API’ler geliştiriyor; MongoDB ve PostgreSQL’i hibrit olarak kullanıyorum. Eloquent ORM ile veri modelleme ve yönetimini optimize ediyorum. \n Laravel Reverb ile WebSocket tabanlı, gerçek zamanlı sistemler geliştiriyor; chat ve bildirim gibi canlı veri akışlarında aktif rol alıyorum. \n Laravel Blade ile modern ve kullanıcı dostu yönetim panelleri geliştiriyor, Vue.js ile etkileşimli arayüzler tasarlıyorum.",
-  "kotlin_project_experience": "Kotlin dilinde projeler geliştirerek yazılım iş ortamını tanımış oldum.",
+  "kotlin_project_experience": "Kotlin ile geliştirilen projeleri inceledik, geliştirdik. Takım çalışması, Git ile versiyon kontrolü ve kurumsal yazılım geliştirme süreçlerinden deneyimledim.",
   "sidebar": {
     "home": "Anasayfa",
     "about": "Hakkımda",
