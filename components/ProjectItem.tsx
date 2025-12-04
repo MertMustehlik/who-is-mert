@@ -42,8 +42,8 @@ export default function ProjectItem({
         whileTap={{ y: 0 }}
         transition={{ type: "spring", stiffness: 100, damping: 10 }}
       >
-        <Card className="py-0 flex-row">
-          <CardContent className="border-r flex p-10 rounded-l-xl">
+        <Card className="py-0 lg:flex-row">
+          <CardContent className="border-r flex justify-center p-10 rounded-l-xl">
             <div className="flex items-center justify-center">
               <motion.div
                 whileHover={{ scale: 1.01 }}
