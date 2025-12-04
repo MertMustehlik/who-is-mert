@@ -1,9 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactCompiler: true,
-  basePath: "/who-is-mert",
+  basePath: process.env.NODE_ENV === "production" ? "/who-is-mert" : "",
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
