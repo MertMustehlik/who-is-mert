@@ -1,164 +1,169 @@
 {
-    "download_resume": "Özgeçmiş İndir",
-    "sidebar": {
-        "home": "Anasayfa",
-        "about": "Hakkımda",
-        "contact": "İletişim",
-        "projects": "Projeler",
-        "links": "Bağlantılar"
+  "download_resume": "Özgeçmiş İndir",
+  "experience": "Deneyim",
+  "experience_crm_erp_cms": "CRM, ERP ve CMS projelerinin geliştirilme süreçlerinde aktif görev aldım.",
+  "contribution_to_laravel_backend_modules_and_integrations": "Laravel ile kullanıcı rolleri, yetkilendirme, veri yönetimi, e-fatura ve sanal POS entegrasyonları gibi modüllerin geliştirilmesine katkı sağladım.",
+  "laravel_api_realtime_admin_vue_development": "Laravel ile RESTful ve GraphQL API’ler geliştiriyor; MongoDB ve PostgreSQL’i hibrit olarak kullanıyorum. Eloquent ORM ile veri modelleme ve yönetimini optimize ediyorum. \n Laravel Reverb ile WebSocket tabanlı, gerçek zamanlı sistemler geliştiriyor; chat ve bildirim gibi canlı veri akışlarında aktif rol alıyorum. \n Laravel Blade ile modern ve kullanıcı dostu yönetim panelleri geliştiriyor, Vue.js ile etkileşimli arayüzler tasarlıyorum.",
+  "kotlin_project_experience": "Kotlin dilinde projeler geliştirerek yazılım iş ortamını tanımış oldum.",
+  "sidebar": {
+    "home": "Anasayfa",
+    "about": "Hakkımda",
+    "contact": "İletişim",
+    "projects": "Projeler",
+    "links": "Bağlantılar"
+  },
+  "theme": {
+    "light": "Açık",
+    "dark": "Koyu",
+    "system": "Sistem"
+  },
+  "about_page": {
+    "about_me": "Hakkımda",
+    "intro": "Merhaba, ben Mert Müstehlik. Yazılım kariyerime ilk yıllarımda CRM, ERP ve kurumsal web projeleri geliştirerek başladım. Bu süreçte rol bazlı yetkilendirme, veri akışları, entegrasyonlar ve kurumsal iş süreçleri gibi konularda güçlü bir temel edindim. Aynı zamanda Laravel Blade ve Vue.js ile arayüz geliştirme deneyimi kazanarak hem backend hem de frontend taraflarında aktif rol aldım.",
+    "projects": "Zamanla daha büyük ve kapsamlı projelerde yer alarak RESTful API’ler, GraphQL servisleri, yüksek trafikli mimariler ve kullanıcı odaklı yönetim panelleri geliştirdim. Laravel, PostgreSQL, MySQL, MongoDB, Redis ve çeşitli modern web araçlarıyla çalışıyor; ihtiyaç duyulan modülleri analiz aşamasından geliştirme, optimizasyon ve dağıtıma kadar uçtan uca tasarlıyorum.",
+    "approach": "Çalışma yaklaşımım; temiz kod, doğru mimari kararlar, tutarlı veri modelleri, performans odaklı çözümler ve sürekli öğrenme prensipleri üzerine kurulu. Her projede sürdürülebilir, ölçeklenebilir ve gerçekten değer üreten yazılımlar geliştirmeyi hedefliyorum.",
+    "motivation": "Yazılımda beni en çok motive eden şey, bir fikrin kodla birlikte gerçek bir ürüne dönüşmesi. Ortaya çıkan bir uygulamanın insanların hayatında karşılık bulduğunu görmek hem beni mutlu ediyor hem de sonraki projeler için daha fazla heyecanlandırıyor. Ürettiğim her iş, bu tutkuyu daha da güçlendiriyor."
+  },
+  "contact_page": {
+    "contact": "İletişim",
+    "name": "Ad",
+    "email": "E-Posta",
+    "message": "Mesaj",
+    "message_field_desc": "İletmek istediğiniz mesajı buraya yazabilirsiniz. Size mümkün olan en kısa sürede dönüş yapmaya özen göstereceğim.",
+    "character": "Karakter",
+    "success_message": "Mesajınız başarıyla gönderildi!",
+    "error_message": "Üzgünüm, mesajınız gönderilemedi. Lütfen tekrar deneyin."
+  },
+  "projects_page": {
+    "projects": "Projeler",
+    "shoot90": {
+      "description": [
+        "Kullanıcıların videolar yükleyip yayınlar açabildiği ve Shoot Coin tabanlı hediye gönderip bu hediyeleri nakde çevirebildiği sosyal medya odaklı içerik platformu.",
+        "Bu projede canlı yayın & PK modülleri haricindeki backend süreçlerin büyük kısmında görev aldım. Video yükleme & GraphQL API geliştirme, coin paketleri oluşturma ve satın alma süreçleri, hediye gönderme mantığı, cüzdan yönetimi, admin panel işlevleri ve hibrit veri modellemesi (MongoDB + PostgreSQL) tarafında doğrudan katkı sağladım.",
+        "Ayrıca web tabanlı admin panelinin frontend tarafını (Laravel Blade) geliştirdim; yönetsel ekranların tasarımını, işlevselliğini ve veri akışını uçtan uca oluşturdum."
+      ]
     },
-    "theme": {
-        "light": "Açık",
-        "dark": "Koyu",
-        "system": "Sistem"
+    "walltalk": {
+      "description": [
+        "Walltalk, kullanıcıların yazılı, sesli ve görüntülü olarak sohbet edebildiği, üniversite öğrencilerinin öğrenci maili ile doğrulama yaparak kendi üniversite gruplarında iletişim kurabildiği ve tüm mesajların her gece otomatik olarak silindiği bir sosyal sohbet uygulamasıdır.",
+        "Projede backend geliştirme, admin panel (laravel blade) ve Vue.js ile web arayüzünün geliştirilmesinde görev aldım."
+      ]
     },
-    "about_page": {
-        "about_me": "Hakkımda",
-        "intro": "Merhaba, ben Mert Müstehlik. Yazılım kariyerime ilk yıllarımda CRM, ERP ve kurumsal web projeleri geliştirerek başladım. Bu süreçte rol bazlı yetkilendirme, veri akışları, entegrasyonlar ve kurumsal iş süreçleri gibi konularda güçlü bir temel edindim. Aynı zamanda Laravel Blade ve Vue.js ile arayüz geliştirme deneyimi kazanarak hem backend hem de frontend taraflarında aktif rol aldım.",
-        "projects": "Zamanla daha büyük ve kapsamlı projelerde yer alarak RESTful API’ler, GraphQL servisleri, yüksek trafikli mimariler ve kullanıcı odaklı yönetim panelleri geliştirdim. Laravel, PostgreSQL, MySQL, MongoDB, Redis ve çeşitli modern web araçlarıyla çalışıyor; ihtiyaç duyulan modülleri analiz aşamasından geliştirme, optimizasyon ve dağıtıma kadar uçtan uca tasarlıyorum.",
-        "approach": "Çalışma yaklaşımım; temiz kod, doğru mimari kararlar, tutarlı veri modelleri, performans odaklı çözümler ve sürekli öğrenme prensipleri üzerine kurulu. Her projede sürdürülebilir, ölçeklenebilir ve gerçekten değer üreten yazılımlar geliştirmeyi hedefliyorum.",
-        "motivation": "Yazılımda beni en çok motive eden şey, bir fikrin kodla birlikte gerçek bir ürüne dönüşmesi. Ortaya çıkan bir uygulamanın insanların hayatında karşılık bulduğunu görmek hem beni mutlu ediyor hem de sonraki projeler için daha fazla heyecanlandırıyor. Ürettiğim her iş, bu tutkuyu daha da güçlendiriyor."
+    "orbiba-robotics": {
+      "description": [
+        "Çiftlik sahiplerinin kendi çiftliklerini yönetebildiği ve diğer kullanıcılarla etkileşime geçebildiği bir uygulama. Gelir-gider takibi, mahsul ve hayvan yönetimi, ücretli reklamlar, iş ilanları ve etkinlik paylaşımları gibi özellikler içerir.",
+        "Projede RESTful API uç noktalarınını ve web tabanlı admin panelini Laravel Blade ile tasarlayıp geliştirdim."
+      ]
     },
-    "contact_page": {
-        "contact": "İletişim",
-        "name": "Ad",
-        "email": "E-Posta",
-        "message": "Mesaj",
-        "message_field_desc": "İletmek istediğiniz mesajı buraya yazabilirsiniz. Size mümkün olan en kısa sürede dönüş yapmaya özen göstereceğim.",
-        "character": "Karakter",
-        "success_message": "Mesajınız başarıyla gönderildi!",
-        "error_message": "Üzgünüm, mesajınız gönderilemedi. Lütfen tekrar deneyin."
+    "netglow": {
+      "description": [
+        "Şirketlerin iş süreçlerini dijitalleştirip yönetmelerine olanak sağlayan genel bir iş akış yönetim platformu.",
+        "Bir çok modülün geliştirilmesi ve iyileştirilmesinde görev aldım."
+      ]
     },
-    "projects_page": {
-        "projects": "Projeler",
-        "shoot90": {
-            "description": [
-                "Kullanıcıların videolar yükleyip yayınlar açabildiği ve Shoot Coin tabanlı hediye gönderip bu hediyeleri nakde çevirebildiği sosyal medya odaklı içerik platformu.",
-                "Bu projede canlı yayın & PK modülleri haricindeki backend süreçlerin büyük kısmında görev aldım. Video yükleme & GraphQL API geliştirme, coin paketleri oluşturma ve satın alma süreçleri, hediye gönderme mantığı, cüzdan yönetimi, admin panel işlevleri ve hibrit veri modellemesi (MongoDB + PostgreSQL) tarafında doğrudan katkı sağladım.",
-                "Ayrıca web tabanlı admin panelinin frontend tarafını (Laravel Blade) geliştirdim; yönetsel ekranların tasarımını, işlevselliğini ve veri akışını uçtan uca oluşturdum."
-            ]
-        },
-        "walltalk": {
-            "description": [
-                "Walltalk, kullanıcıların yazılı, sesli ve görüntülü olarak sohbet edebildiği, üniversite öğrencilerinin öğrenci maili ile doğrulama yaparak kendi üniversite gruplarında iletişim kurabildiği ve tüm mesajların her gece otomatik olarak silindiği bir sosyal sohbet uygulamasıdır.",
-                "Projede backend geliştirme, admin panel (laravel blade) ve Vue.js ile web arayüzünün geliştirilmesinde görev aldım."
-            ]
-        },
-        "orbiba-robotics": {
-           "description": [
-                "Çiftlik sahiplerinin kendi çiftliklerini yönetebildiği ve diğer kullanıcılarla etkileşime geçebildiği bir uygulama. Gelir-gider takibi, mahsul ve hayvan yönetimi, ücretli reklamlar, iş ilanları ve etkinlik paylaşımları gibi özellikler içerir.",
-                "Projede RESTful API uç noktalarınını ve web tabanlı admin panelini Laravel Blade ile tasarlayıp geliştirdim."
-          ]
-        },
-        "netglow": {
-         "description": [
-            "Şirketlerin iş süreçlerini dijitalleştirip yönetmelerine olanak sağlayan genel bir iş akış yönetim platformu.",
-            "Bir çok modülün geliştirilmesi ve iyileştirilmesinde görev aldım."
-          ]
-        },
-        "ingilizce-bilen-cocuklar": {
-            "description": [
-                "0-5 yaş çocuklar için İngilizce eğitim programının operasyonel süreçlerini takip etmek ve otomatikleştirmek için geliştirilmiş bir uygulama.",
-                "Web tabanlı aile ve yönetici panellerinin geliştirilmesi ve iyileştirilmesinde görev aldım."
-            ]
-        },
-        "personalvermittlungplus": {
-          "description": [
-            "Şirket içindeki operasyonel süreçlerin tamamını web tabanlı bir CRM sistemine taşımak için geliştirilen bir uygulamadır.",
-            "Projede aday yönetimi, aday CV oluşturma için farklı aday gruplarına göre zorunlu bilgi alanlarının entegrasyonu, acenta yönetimi ve potansiyel müşteri yönetimi gibi modüllerin geliştirilmesi ve iyileştirilmesinde görev aldım."
-          ]
-        },
-         "vento-medical": {
-          "description": [
-            "İstenilen tasarım taslağını HTML/CSS ile web sitesine dönüştürdüm. Çok dilli destek ve CMS tabanlı ürün/ içerik yönetim sistemini geliştirdim.",
-            "Yazdığım kodların gerçek kullanıcılar tarafından kullanıldığı ilk profesyonel projem oldu."
-          ]
-        }
+    "ingilizce-bilen-cocuklar": {
+      "description": [
+        "0-5 yaş çocuklar için İngilizce eğitim programının operasyonel süreçlerini takip etmek ve otomatikleştirmek için geliştirilmiş bir uygulama.",
+        "Web tabanlı aile ve yönetici panellerinin geliştirilmesi ve iyileştirilmesinde görev aldım."
+      ]
     },
-    "form": {
-        "enter_field": "{{field}} giriniz",
-        "bot_spam_alert": "Bot/Spam engellemesi nedeniyle formu göndermeden önce lütfen birkaç saniye bekleyin."
+    "personalvermittlungplus": {
+      "description": [
+        "Şirket içindeki operasyonel süreçlerin tamamını web tabanlı bir CRM sistemine taşımak için geliştirilen bir uygulamadır.",
+        "Projede aday yönetimi, aday CV oluşturma için farklı aday gruplarına göre zorunlu bilgi alanlarının entegrasyonu, acenta yönetimi ve potansiyel müşteri yönetimi gibi modüllerin geliştirilmesi ve iyileştirilmesinde görev aldım."
+      ]
     },
-    "buttons": {
-      "submit": "Gönder",
-      "clear": "Temizle"
-    },
-    "validation": {
-        "accepted": "{{attribute}} kabul edilmelidir.",
-        "accepted_if": "{{attribute}} alanı, {{other}} {{value}} olduğunda kabul edilmelidir.",
-        "active_url": "{{attribute}} geçerli bir URL olmalıdır.",
-        "after": "{{attribute}} alanı {{date}} tarihinden sonra olmalıdır.",
-        "after_or_equal": "{{attribute}} alanı {{date}} tarihine eşit veya sonra olmalıdır.",
-        "alpha": "{{attribute}} sadece harflerden oluşmalıdır.",
-        "alpha_dash": "{{attribute}} sadece harf, rakam, tire ve alt çizgi içerebilir.",
-        "alpha_num": "{{attribute}} sadece harf ve rakam içerebilir.",
-        "array": "{{attribute}} bir dizi olmalıdır.",
-        "boolean": "{{attribute}} alanı doğru veya yanlış olmalıdır.",
-        "confirmed": "{{attribute}} onayı eşleşmiyor.",
-        "date": "{{attribute}} geçerli bir tarih olmalıdır.",
-        "date_format": "{{attribute}} {{format}} biçimiyle eşleşmelidir.",
-        "decimal": "{{attribute}} alanı {{decimal}} ondalık basamak içermelidir.",
-        "different": "{{attribute}} ve {{other}} farklı olmalıdır.",
-        "digits": "{{attribute}} {{digits}} haneli olmalıdır.",
-        "digits_between": "{{attribute}} {{min}} ile {{max}} hane arasında olmalıdır.",
-        "email": "{{attribute}} geçerli bir e-posta olmalıdır.",
-        "ends_with": "{{attribute}} şunlardan biri ile bitmelidir: {{values}}",
-        "exists": "Seçilen {{attribute}} geçersizdir.",
-        "file": "{{attribute}} bir dosya olmalıdır.",
-        "filled": "{{attribute}} alanı dolu olmalıdır.",
-        "gt": {
-            "numeric": "{{attribute}} {{value}} değerinden büyük olmalıdır.",
-            "file": "{{attribute}} {{value}} kilobayttan büyük olmalıdır.",
-            "string": "{{attribute}} {{value}} karakterden büyük olmalıdır.",
-            "array": "{{attribute}} {{value}} öğeden fazla olmalıdır."
-        },
-        "gte": {
-            "numeric": "{{attribute}} {{value}} değerine eşit veya büyük olmalıdır.",
-            "file": "{{attribute}} {{value}} kilobayta eşit veya büyük olmalıdır.",
-            "string": "{{attribute}} {{value}} karaktere eşit veya büyük olmalıdır.",
-            "array": "{{attribute}} {{value}} öğeye eşit veya fazla olmalıdır."
-        },
-        "image": "{{attribute}} bir resim olmalıdır.",
-        "in": "Seçilen {{attribute}} geçersizdir.",
-        "integer": "{{attribute}} bir tamsayı olmalıdır.",
-        "ip": "{{attribute}} geçerli bir IP adresi olmalıdır.",
-        "ipv4": "{{attribute}} geçerli bir IPv4 adresi olmalıdır.",
-        "ipv6": "{{attribute}} geçerli bir IPv6 adresi olmalıdır.",
-        "json": "{{attribute}} geçerli bir JSON olmalıdır.",
-        "max": {
-            "numeric": "{{attribute}} {{max}} değerinden büyük olamaz.",
-            "file": "{{attribute}} {{max}} kilobayttan büyük olamaz.",
-            "string": "{{attribute}} {{max}} karakterden uzun olamaz.",
-            "array": "{{attribute}} {{max}} öğeden fazla olamaz."
-        },
-        "min": {
-            "numeric": "{{attribute}} en az {{min}} olmalıdır.",
-            "file": "{{attribute}} en az {{min}} kilobayt olmalıdır.",
-            "string": "{{attribute}} en az {{min}} karakter olmalıdır.",
-            "array": "{{attribute}} en az {{min}} öğe içermelidir."
-        },
-        "not_in": "Seçilen {{attribute}} geçersizdir.",
-        "numeric": "{{attribute}} sayısal olmalıdır.",
-        "password": {
-            "letters": "{{attribute}} en az bir harf içermelidir.",
-            "mixed": "{{attribute}} en az bir büyük ve bir küçük harf içermelidir.",
-            "numbers": "{{attribute}} en az bir rakam içermelidir.",
-            "symbols": "{{attribute}} en az bir sembol içermelidir.",
-            "uncompromised": "Seçilen {{attribute}} veri sızıntısında bulunmuştur. Lütfen farklı bir {{attribute}} seçin."
-        },
-        "present": "{{attribute}} alanı mevcut olmalıdır.",
-        "regex": "{{attribute}} formatı geçersizdir.",
-        "required": "{{attribute}} alanı gereklidir.",
-        "same": "{{attribute}} ve {{other}} eşleşmelidir.",
-        "size": {
-            "numeric": "{{attribute}} {{size}} olmalıdır.",
-            "file": "{{attribute}} {{size}} kilobayt olmalıdır.",
-            "string": "{{attribute}} {{size}} karakter olmalıdır.",
-            "array": "{{attribute}} {{size}} öğe içermelidir."
-        },
-        "string": "{{attribute}} bir metin olmalıdır.",
-        "timezone": "{{attribute}} geçerli bir zaman dilimi olmalıdır.",
-        "unique": "{{attribute}} daha önce alınmış.",
-        "url": "{{attribute}} geçerli bir URL olmalıdır."
+    "vento-medical": {
+      "description": [
+        "İstenilen tasarım taslağını HTML/CSS ile web sitesine dönüştürdüm. Çok dilli destek ve CMS tabanlı ürün/ içerik yönetim sistemini geliştirdim.",
+        "Yazdığım kodların gerçek kullanıcılar tarafından kullanıldığı ilk profesyonel projem oldu."
+      ]
     }
+  },
+  "form": {
+    "enter_field": "{{field}} giriniz",
+    "bot_spam_alert": "Bot/Spam engellemesi nedeniyle formu göndermeden önce lütfen birkaç saniye bekleyin."
+  },
+  "buttons": {
+    "submit": "Gönder",
+    "clear": "Temizle"
+  },
+  "validation": {
+    "accepted": "{{attribute}} kabul edilmelidir.",
+    "accepted_if": "{{attribute}} alanı, {{other}} {{value}} olduğunda kabul edilmelidir.",
+    "active_url": "{{attribute}} geçerli bir URL olmalıdır.",
+    "after": "{{attribute}} alanı {{date}} tarihinden sonra olmalıdır.",
+    "after_or_equal": "{{attribute}} alanı {{date}} tarihine eşit veya sonra olmalıdır.",
+    "alpha": "{{attribute}} sadece harflerden oluşmalıdır.",
+    "alpha_dash": "{{attribute}} sadece harf, rakam, tire ve alt çizgi içerebilir.",
+    "alpha_num": "{{attribute}} sadece harf ve rakam içerebilir.",
+    "array": "{{attribute}} bir dizi olmalıdır.",
+    "boolean": "{{attribute}} alanı doğru veya yanlış olmalıdır.",
+    "confirmed": "{{attribute}} onayı eşleşmiyor.",
+    "date": "{{attribute}} geçerli bir tarih olmalıdır.",
+    "date_format": "{{attribute}} {{format}} biçimiyle eşleşmelidir.",
+    "decimal": "{{attribute}} alanı {{decimal}} ondalık basamak içermelidir.",
+    "different": "{{attribute}} ve {{other}} farklı olmalıdır.",
+    "digits": "{{attribute}} {{digits}} haneli olmalıdır.",
+    "digits_between": "{{attribute}} {{min}} ile {{max}} hane arasında olmalıdır.",
+    "email": "{{attribute}} geçerli bir e-posta olmalıdır.",
+    "ends_with": "{{attribute}} şunlardan biri ile bitmelidir: {{values}}",
+    "exists": "Seçilen {{attribute}} geçersizdir.",
+    "file": "{{attribute}} bir dosya olmalıdır.",
+    "filled": "{{attribute}} alanı dolu olmalıdır.",
+    "gt": {
+      "numeric": "{{attribute}} {{value}} değerinden büyük olmalıdır.",
+      "file": "{{attribute}} {{value}} kilobayttan büyük olmalıdır.",
+      "string": "{{attribute}} {{value}} karakterden büyük olmalıdır.",
+      "array": "{{attribute}} {{value}} öğeden fazla olmalıdır."
+    },
+    "gte": {
+      "numeric": "{{attribute}} {{value}} değerine eşit veya büyük olmalıdır.",
+      "file": "{{attribute}} {{value}} kilobayta eşit veya büyük olmalıdır.",
+      "string": "{{attribute}} {{value}} karaktere eşit veya büyük olmalıdır.",
+      "array": "{{attribute}} {{value}} öğeye eşit veya fazla olmalıdır."
+    },
+    "image": "{{attribute}} bir resim olmalıdır.",
+    "in": "Seçilen {{attribute}} geçersizdir.",
+    "integer": "{{attribute}} bir tamsayı olmalıdır.",
+    "ip": "{{attribute}} geçerli bir IP adresi olmalıdır.",
+    "ipv4": "{{attribute}} geçerli bir IPv4 adresi olmalıdır.",
+    "ipv6": "{{attribute}} geçerli bir IPv6 adresi olmalıdır.",
+    "json": "{{attribute}} geçerli bir JSON olmalıdır.",
+    "max": {
+      "numeric": "{{attribute}} {{max}} değerinden büyük olamaz.",
+      "file": "{{attribute}} {{max}} kilobayttan büyük olamaz.",
+      "string": "{{attribute}} {{max}} karakterden uzun olamaz.",
+      "array": "{{attribute}} {{max}} öğeden fazla olamaz."
+    },
+    "min": {
+      "numeric": "{{attribute}} en az {{min}} olmalıdır.",
+      "file": "{{attribute}} en az {{min}} kilobayt olmalıdır.",
+      "string": "{{attribute}} en az {{min}} karakter olmalıdır.",
+      "array": "{{attribute}} en az {{min}} öğe içermelidir."
+    },
+    "not_in": "Seçilen {{attribute}} geçersizdir.",
+    "numeric": "{{attribute}} sayısal olmalıdır.",
+    "password": {
+      "letters": "{{attribute}} en az bir harf içermelidir.",
+      "mixed": "{{attribute}} en az bir büyük ve bir küçük harf içermelidir.",
+      "numbers": "{{attribute}} en az bir rakam içermelidir.",
+      "symbols": "{{attribute}} en az bir sembol içermelidir.",
+      "uncompromised": "Seçilen {{attribute}} veri sızıntısında bulunmuştur. Lütfen farklı bir {{attribute}} seçin."
+    },
+    "present": "{{attribute}} alanı mevcut olmalıdır.",
+    "regex": "{{attribute}} formatı geçersizdir.",
+    "required": "{{attribute}} alanı gereklidir.",
+    "same": "{{attribute}} ve {{other}} eşleşmelidir.",
+    "size": {
+      "numeric": "{{attribute}} {{size}} olmalıdır.",
+      "file": "{{attribute}} {{size}} kilobayt olmalıdır.",
+      "string": "{{attribute}} {{size}} karakter olmalıdır.",
+      "array": "{{attribute}} {{size}} öğe içermelidir."
+    },
+    "string": "{{attribute}} bir metin olmalıdır.",
+    "timezone": "{{attribute}} geçerli bir zaman dilimi olmalıdır.",
+    "unique": "{{attribute}} daha önce alınmış.",
+    "url": "{{attribute}} geçerli bir URL olmalıdır."
+  }
 }

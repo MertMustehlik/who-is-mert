@@ -1,5 +1,10 @@
 {
   "download_resume": "Download Resume",
+  "experience": "Experience",
+  "experience_crm_erp_cms": "I actively took part in the development processes of CRM, ERP, and CMS projects.",
+  "contribution_to_laravel_backend_modules_and_integrations": "I contributed to the development of modules such as user roles, authorization, data management, e-invoice, and virtual POS integrations in Laravel.",
+  "laravel_api_realtime_admin_vue_development": "I develop RESTful and GraphQL APIs with Laravel and use MongoDB and PostgreSQL in a hybrid structure. I optimize data modeling and management with Eloquent ORM.\n With Laravel Reverb, I build WebSocket-based real-time systems, taking an active role especially in live data flows such as chat and notifications.\n I develop modern and user-friendly admin panels with Laravel Blade and design interactive interfaces with Vue.js.",
+  "kotlin_project_experience": "I gained experience in the software development environment by building projects using the Kotlin programming language.",
   "sidebar": {
     "home": "Home",
     "about": "About",

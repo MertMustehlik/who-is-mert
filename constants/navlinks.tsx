@@ -26,5 +26,5 @@ export const navlinks: Navlink[] = [
     href: "/projects",
     label: "projects",
     icon: IconBriefcase,
-  },
+  }
 ];

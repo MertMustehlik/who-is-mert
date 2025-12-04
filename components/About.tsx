@@ -2,9 +2,10 @@
 
 import { Container } from "./Container";
 import { PageTitle } from "./PageTitle";
-import { IconMessage2 } from "@tabler/icons-react";
+import { IconMessage2, IconBriefcase } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import Experiences from "@/components/Experiences";
 
 export default function About() {
   const { t } = useTranslation();
@@ -74,6 +75,13 @@ export default function About() {
           <p className="mb-4">{t("about_page.approach")}</p>
           <p className="mb-4">{t("about_page.motivation")}</p>
         </div>
+      </div>
+
+      <div className="mt-10">
+        <h2 className="text-[22px] font-semibold mb-4 flex items-center gap-2">
+          <IconBriefcase size="24" /> {t("experience")}
+        </h2>
+        <Experiences />
       </div>
     </Container>
   );
