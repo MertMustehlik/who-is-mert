@@ -1,10 +1,16 @@
 {
   "download_resume": "Özgeçmiş İndir",
+  "operation_success": "İşlem başarılı",
+  "operation_failed": "İşlem başarısız",
   "experience": "Deneyim",
   "experience_crm_erp_cms": "CRM, ERP ve CMS projelerinin geliştirilme süreçlerinde aktif görev aldım.",
   "contribution_to_laravel_backend_modules_and_integrations": "Laravel ile kullanıcı rolleri, yetkilendirme, veri yönetimi, e-fatura ve sanal POS entegrasyonları gibi modüllerin geliştirilmesine katkı sağladım.",
   "laravel_api_realtime_admin_vue_development": "Laravel ile RESTful ve GraphQL API’ler geliştiriyor; MongoDB ve PostgreSQL’i hibrit olarak kullanıyorum. Eloquent ORM ile veri modelleme ve yönetimini optimize ediyorum. \n Laravel Reverb ile WebSocket tabanlı, gerçek zamanlı sistemler geliştiriyor; chat ve bildirim gibi canlı veri akışlarında aktif rol alıyorum. \n Laravel Blade ile modern ve kullanıcı dostu yönetim panelleri geliştiriyor, Vue.js ile etkileşimli arayüzler tasarlıyorum.",
   "kotlin_project_experience": "Kotlin ile geliştirilen projeleri inceledik, geliştirdik. Takım çalışması, Git ile versiyon kontrolü ve kurumsal yazılım geliştirme süreçlerinden deneyimledim.",
+  "resume_dialog": {
+    "title": "Özgeçmişimi almak için e-posta adresinizi bırakın",
+    "description": "Özgeçmişimi incelemek ister misiniz? Sadece kimin indirdiğini bilmem için e-posta adresinizi girin. Merak etmeyin, spam yok, sadece takip amaçlı!"
+  },
   "sidebar": {
     "home": "Anasayfa",
     "about": "Hakkımda",
@@ -86,7 +92,9 @@
   },
   "buttons": {
     "submit": "Gönder",
-    "clear": "Temizle"
+    "clear": "Temizle",
+    "cancel": "Vazgeç",
+    "download": "İndir"
   },
   "validation": {
     "accepted": "{{attribute}} kabul edilmelidir.",

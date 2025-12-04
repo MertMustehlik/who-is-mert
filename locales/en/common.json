@@ -1,10 +1,16 @@
 {
   "download_resume": "Download Resume",
+  "operation_success": "Operation successful",
+  "operation_failed": "Operation failed",
   "experience": "Experience",
   "experience_crm_erp_cms": "I actively took part in the development processes of CRM, ERP, and CMS projects.",
   "contribution_to_laravel_backend_modules_and_integrations": "I contributed to the development of modules such as user roles, authorization, data management, e-invoice, and virtual POS integrations in Laravel.",
   "laravel_api_realtime_admin_vue_development": "I develop RESTful and GraphQL APIs with Laravel and use MongoDB and PostgreSQL in a hybrid structure. I optimize data modeling and management with Eloquent ORM.\n With Laravel Reverb, I build WebSocket-based real-time systems, taking an active role especially in live data flows such as chat and notifications.\n I develop modern and user-friendly admin panels with Laravel Blade and design interactive interfaces with Vue.js.",
   "kotlin_project_experience": "We explored and developed projects built with Kotlin. I gained experience in teamwork, version control with Git, and corporate software development processes.",
+  "resume_dialog": {
+    "title": "Drop Your Email to Get My CV",
+    "description": "Want to check out my CV? Just enter your email so I know who’s downloading it. Don’t worry, no spam, just keeping track!"
+  },
   "sidebar": {
     "home": "Home",
     "about": "About",
@@ -86,7 +92,9 @@
   },
   "buttons": {
     "submit": "Submit",
-    "clear": "Clear"
+    "clear": "Clear",
+    "cancel": "Cancel",
+    "download": "Download"
   },
   "validation": {
     "accepted": "{{attribute}} must be accepted.",
