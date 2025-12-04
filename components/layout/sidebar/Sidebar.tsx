@@ -36,7 +36,7 @@ const Sidebar = () => {
             animate={{ x: 0 }}
             transition={{ duration: 0.2, ease: "linear" }}
             exit={{ x: -200 }}
-            className="fixed lg:relative z-100 left-0 top-0 h-screen bg-sidebar w-75 py-8 text-white border-r border-r-gray-700"
+            className="fixed lg:relative z-10 left-0 top-0 h-screen bg-sidebar w-75 py-8 text-white border-r border-r-gray-700"
           >
             <SidebarContent setSidebarOpen={setSidebarOpen} />
           </motion.div>
