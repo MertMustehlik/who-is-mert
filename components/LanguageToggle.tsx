@@ -13,6 +13,9 @@ export function LanguageToggle() {
 
   const changeLocale = async (locale: string) => {
     i18n.changeLanguage(locale);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("locale", locale);
+    }
   };
 
   return (
