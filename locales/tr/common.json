@@ -4,6 +4,7 @@
         "home": "Anasayfa",
         "about": "Hakkımda",
         "contact": "İletişim",
+        "projects": "Projeler",
         "links": "Bağlantılar"
     },
     "theme": {
@@ -27,6 +28,52 @@
         "character": "Karakter",
         "success_message": "Mesajınız başarıyla gönderildi!",
         "error_message": "Üzgünüm, mesajınız gönderilemedi. Lütfen tekrar deneyin."
+    },
+    "projects_page": {
+        "projects": "Projeler",
+        "shoot90": {
+            "description": [
+                "Kullanıcıların videolar yükleyip yayınlar açabildiği ve Shoot Coin tabanlı hediye gönderip bu hediyeleri nakde çevirebildiği sosyal medya odaklı içerik platformu.",
+                "Bu projede canlı yayın & PK modülleri haricindeki backend süreçlerin büyük kısmında görev aldım. Video yükleme & GraphQL API geliştirme, coin paketleri oluşturma ve satın alma süreçleri, hediye gönderme mantığı, cüzdan yönetimi, admin panel işlevleri ve hibrit veri modellemesi (MongoDB + PostgreSQL) tarafında doğrudan katkı sağladım.",
+                "Ayrıca web tabanlı admin panelinin frontend tarafını (Laravel Blade) geliştirdim; yönetsel ekranların tasarımını, işlevselliğini ve veri akışını uçtan uca oluşturdum."
+            ]
+        },
+        "walltalk": {
+            "description": [
+                "Walltalk, kullanıcıların yazılı, sesli ve görüntülü olarak sohbet edebildiği, üniversite öğrencilerinin öğrenci maili ile doğrulama yaparak kendi üniversite gruplarında iletişim kurabildiği ve tüm mesajların her gece otomatik olarak silindiği bir sosyal sohbet uygulamasıdır.",
+                "Projede backend geliştirme, admin panel (laravel blade) ve Vue.js ile web arayüzünün geliştirilmesinde görev aldım."
+            ]
+        },
+        "orbiba-robotics": {
+           "description": [
+                "Çiftlik sahiplerinin kendi çiftliklerini yönetebildiği ve diğer kullanıcılarla etkileşime geçebildiği bir uygulama. Gelir-gider takibi, mahsul ve hayvan yönetimi, ücretli reklamlar, iş ilanları ve etkinlik paylaşımları gibi özellikler içerir.",
+                "Projede RESTful API uç noktalarınını ve web tabanlı admin panelini Laravel Blade ile tasarlayıp geliştirdim."
+          ]
+        },
+        "netglow": {
+         "description": [
+            "Şirketlerin iş süreçlerini dijitalleştirip yönetmelerine olanak sağlayan genel bir iş akış yönetim platformu.",
+            "Bir çok modülün geliştirilmesi ve iyileştirilmesinde görev aldım."
+          ]
+        },
+        "ingilizce-bilen-cocuklar": {
+            "description": [
+                "0-5 yaş çocuklar için İngilizce eğitim programının operasyonel süreçlerini takip etmek ve otomatikleştirmek için geliştirilmiş bir uygulama.",
+                "Web tabanlı aile ve yönetici panellerinin geliştirilmesi ve iyileştirilmesinde görev aldım."
+            ]
+        },
+        "personalvermittlungplus": {
+          "description": [
+            "Şirket içindeki operasyonel süreçlerin tamamını web tabanlı bir CRM sistemine taşımak için geliştirilen bir uygulamadır.",
+            "Projede aday yönetimi, aday CV oluşturma için farklı aday gruplarına göre zorunlu bilgi alanlarının entegrasyonu, acenta yönetimi ve potansiyel müşteri yönetimi gibi modüllerin geliştirilmesi ve iyileştirilmesinde görev aldım."
+          ]
+        },
+         "vento-medical": {
+          "description": [
+            "İstenilen tasarım taslağını HTML/CSS ile web sitesine dönüştürdüm. Çok dilli destek ve CMS tabanlı ürün/ içerik yönetim sistemini geliştirdim.",
+            "Yazdığım kodların gerçek kullanıcılar tarafından kullanıldığı ilk profesyonel projem oldu."
+          ]
+        }
     },
     "form": {
         "enter_field": "{{field}} giriniz",

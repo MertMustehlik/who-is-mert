@@ -4,6 +4,7 @@
     "home": "Home",
     "about": "About",
     "contact": "Contact",
+    "projects": "Projects",
     "links": "Links"
   },
   "theme": {
@@ -27,6 +28,52 @@
     "character": "Character",
     "success_message": "Your message has been sent successfully!",
     "error_message": "Sorry, your message could not be sent. Please try again."
+  },
+  "projects_page": {
+    "projects": "Projects",
+    "shoot90": {
+      "description": [
+        "A social media-focused content platform where users can upload videos, host live broadcasts, send Shoot Coin-based gifts, and convert them to cash.",
+        "I contributed to the majority of backend processes, excluding live broadcast & PK modules: video uploads, GraphQL API development, creation and purchase of coin packages, gift sending logic, wallet management, admin panel functionalities, and hybrid data modeling (MongoDB + PostgreSQL).",
+        "Additionally, I developed the frontend of the web-based admin panel (Laravel Blade), implementing end-to-end design, functionality, and data flow for management screens."
+      ]
+    },
+    "walltalk": {
+      "description": [
+        "WallTalk is a social chat app where users can communicate via text, audio, and video, with university students able to verify their student email to join their campus groups, and all messages are automatically deleted every night.",
+        "I worked on backend development, the admin panel (Laravel Blade), and the web interface using Vue.js."
+      ]
+    },
+    "orbiba-robotics": {
+      "description": [
+        "An application for farm owners to manage their farms and interact with other users. Features include income-expense tracking, crop and livestock management, paid advertisements, job postings, and event sharing.",
+        "I developed the RESTful API endpoints and designed and implemented the web-based admin panel using Laravel Blade."
+      ]
+    },
+    "netglow": {
+      "description": [
+        "A comprehensive workflow management platform that allows companies to digitalize and manage their business processes.",
+        "I contributed to the development and improvement of multiple modules."
+      ]
+    },
+    "ingilizce-bilen-cocuklar": {
+      "description": [
+        "An application developed to monitor and automate the operational processes of an English education program for children aged 0-5.",
+        "I contributed to the development and improvement of web-based family and admin panels."
+      ]
+    },
+    "personalvermittlungplus": {
+      "description": [
+        "An application developed to migrate all internal company operations to a web-based CRM system.",
+        "I worked on modules including candidate management, integration of mandatory fields for different candidate groups for CV creation, agency management, and potential customer management, contributing to both development and improvement."
+      ]
+    },
+    "vento-medical": {
+      "description": [
+        "Transformed the provided design drafts into a fully functional website using HTML/CSS, and developed a multilingual, CMS-based product and content management system using PHP.",
+        "This was my first professional project where my code was used by real users."
+      ]
+    }
   },
   "form": {
     "enter_field": "Enter {{field}}",
