@@ -106,7 +106,7 @@ export function DownloadResume() {
               onClick={() => setResumeLanguage("en")}
               className="flex items-center gap-2 justify-center w-40 cursor-pointer"
             >
-              <GB className="w-5 h-5" /> Özgeçmiş EN
+              <GB className="w-5 h-5" /> Resume EN
             </Button>
           </DialogTrigger>
           <DialogContent className="sm:max-w-[425px]">
