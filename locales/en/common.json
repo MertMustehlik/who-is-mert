@@ -42,6 +42,11 @@
   },
   "projects_page": {
     "projects": "Projects",
+    "vize-basvuru-yonetim-sistemi": {
+      "description": [
+        "A CRM system developed for visa consultancy offices to centrally manage application processes. It allows filtering and listing applications with scheduled appointments, pending payments, completed statuses, and visas nearing expiration. Each application supports document uploads and note-taking, while secure access is ensured through user- and role-based authorization. Operational performance can be monitored via statistics and visual dashboards."
+      ]
+    },
     "shoot90": {
       "description": [
         "A social media-focused content platform where users can upload videos, host live broadcasts, send Shoot Coin-based gifts, and convert them to cash.",

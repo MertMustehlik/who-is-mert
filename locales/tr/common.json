@@ -42,6 +42,11 @@
   },
   "projects_page": {
     "projects": "Projeler",
+    "vize-basvuru-yonetim-sistemi": {
+      "description": [
+        "Vize danışmanlık ofisleri için geliştirilen, başvuru süreçlerini tek merkezden yöneten bir CRM. Randevu alınmış, ödeme bekleyen, sonuçlanmış ve vize bitiş tarihi yaklaşan başvular filtreli listelenir. Her başvuruya döküman ve not eklenebilir, kullanıcı ve rol bazlı yetkilendirme ile güvenli erişim sağlanır. Dashboard üzerinden istatistik ve grafiklerle operasyon takibi mümkündür."
+      ]
+    },
     "shoot90": {
       "description": [
         "Kullanıcıların videolar yükleyip yayınlar açabildiği ve Shoot Coin tabanlı hediye gönderip bu hediyeleri nakde çevirebildiği sosyal medya odaklı içerik platformu.",
