@@ -1,4 +1,4 @@
-import { IconBrandLinkedin, IconBrandGithub } from "@tabler/icons-react";
+import { IconBrandLinkedin, IconBrandGithub, IconBuilding } from "@tabler/icons-react";
 
 interface SocialLink {
   type: string;
@@ -20,4 +20,10 @@ export const socialLinks: SocialLink[] = [
     icon: IconBrandGithub,
     href: "https://github.com/MertMustehlik",
   },
+  {
+    type: "Vize CRM",
+    label: "Vize CRM",
+    icon: IconBuilding,
+    href: "https://mustevo.com",
+  }
 ];
