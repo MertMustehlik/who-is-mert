@@ -25,5 +25,11 @@ export const socialLinks: SocialLink[] = [
     label: "Vize CRM",
     icon: IconBuilding,
     href: "https://mustevo.com",
+  },
+  {
+    type: "Koltukdolu",
+    label: "Koltukdolu",
+    icon: IconBuilding,
+    href: "https://koltukdolu.mustevo.com",
   }
 ];
