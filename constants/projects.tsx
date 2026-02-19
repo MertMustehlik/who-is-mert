@@ -7,14 +7,16 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    image: "images/projects/koltukdolu.png",
+    title: "Koltukdolu — Çok Kiracılı Randevu & İşletme Yönetimi",
+    slug: "koltukdolu",
+    technologies: ["Laravel", "Next.js", "RESTful API", "PostgreSQL"],
+  },
+  {
     image: "images/projects/vize-crm.jpeg",
     title: "Vize Başvuru Yönetim Sistemi",
     slug: "vize-basvuru-yonetim-sistemi",
-    technologies: [
-      "Laravel",
-      "PostgreSQL",
-      "Filament"
-    ],
+    technologies: ["Laravel", "PostgreSQL", "Filament"],
   },
   {
     image: "images/projects/shoot90.svg",

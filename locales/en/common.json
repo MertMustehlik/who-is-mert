@@ -42,6 +42,11 @@
   },
   "projects_page": {
     "projects": "Projects",
+    "koltukdolu": {
+      "description": [
+        "A multi-tenant (multi-tenant) appointment and business management application that allows businesses such as salons, beauty salons, and clinics to manage their appointments and operations from a single panel."
+      ]
+    },
     "vize-basvuru-yonetim-sistemi": {
       "description": [
         "A CRM system developed for visa consultancy offices to centrally manage application processes. It allows filtering and listing applications with scheduled appointments, pending payments, completed statuses, and visas nearing expiration. Each application supports document uploads and note-taking, while secure access is ensured through user- and role-based authorization. Operational performance can be monitored via statistics and visual dashboards."

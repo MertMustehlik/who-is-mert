@@ -42,6 +42,11 @@
   },
   "projects_page": {
     "projects": "Projeler",
+    "koltukdolu": {
+      "description": [
+        "Salon, kuaför, klinik gibi işletmelerin randevu ve operasyonlarını tek panelden yönetebildiği, çok kiracılı (multi-tenant) bir randevu ve işletme yönetim uygulaması."
+      ]
+    },
     "vize-basvuru-yonetim-sistemi": {
       "description": [
         "Vize danışmanlık ofisleri için geliştirilen, başvuru süreçlerini tek merkezden yöneten bir CRM. Randevu alınmış, ödeme bekleyen, sonuçlanmış ve vize bitiş tarihi yaklaşan başvular filtreli listelenir. Her başvuruya döküman ve not eklenebilir, kullanıcı ve rol bazlı yetkilendirme ile güvenli erişim sağlanır. Dashboard üzerinden istatistik ve grafiklerle operasyon takibi mümkündür."
