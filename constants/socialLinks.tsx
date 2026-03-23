@@ -30,6 +30,6 @@ export const socialLinks: SocialLink[] = [
     type: "Koltukdolu",
     label: "Koltukdolu",
     icon: IconBuilding,
-    href: "https://koltukdolu.mustevo.com",
+    href: "https://koltukdoluweb.alpanet.me",
   }
 ];
