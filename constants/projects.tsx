@@ -7,9 +7,9 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    image: "images/projects/koltukdolu.png",
-    title: "Koltukdolu — Çok Kiracılı Randevu & İşletme Yönetimi",
-    slug: "koltukdolu",
+    image: "images/projects/dakiko.avif",
+    title: "Dakiko — Çok Kiracılı Randevu & İşletme Yönetimi",
+    slug: "dakiko",
     technologies: ["Laravel", "Next.js", "RESTful API", "PostgreSQL"],
   },
   {
@@ -21,7 +21,7 @@ export const projects: Project[] = [
   {
     image: "images/projects/shoot90.svg",
     title: "Shoot90",
-    slug: "shoot90",
+    slug: "shoot90",    
     technologies: [
       "Laravel",
       "GraphQL",

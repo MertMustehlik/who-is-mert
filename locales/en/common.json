@@ -42,7 +42,7 @@
   },
   "projects_page": {
     "projects": "Projects",
-    "koltukdolu": {
+    "dakiko": {
       "description": [
         "A multi-tenant (multi-tenant) appointment and business management application that allows businesses such as salons, beauty salons, and clinics to manage their appointments and operations from a single panel."
       ]

@@ -10,6 +10,15 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
+    company: "Kalem inşaat Nak.Turz. Petr.Ürn.San.Ve Tic.Ltd.Şti",
+    slug: "kalem-inşaat",
+    title: "Fiberoptik Teknikeri",
+    date: "05/2026 - 08/2026",
+    location: "İzmir, Türkiye",
+    type: "On-site",
+    description: ['experience_fiberoptic_technician'],
+  },
+  {
     company: "Asiste Software Agency",
     slug: "asiste-software-agency",
     title: "Software Developer",

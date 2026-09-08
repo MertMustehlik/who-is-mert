@@ -21,15 +21,9 @@ export const socialLinks: SocialLink[] = [
     href: "https://github.com/MertMustehlik",
   },
   {
-    type: "Vize CRM",
-    label: "Vize CRM",
+    type: "dakiko",
+    label: "Dakiko",
     icon: IconBuilding,
-    href: "https://mustevo.com",
-  },
-  {
-    type: "Koltukdolu",
-    label: "Koltukdolu",
-    icon: IconBuilding,
-    href: "https://koltukdoluweb.alpanet.me",
+    href: "https://dakiko.app",
   }
 ];
