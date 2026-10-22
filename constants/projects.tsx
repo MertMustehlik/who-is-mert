@@ -7,12 +7,6 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    image: "images/projects/dakiko.avif",
-    title: "Dakiko — Çok Kiracılı Randevu & İşletme Yönetimi",
-    slug: "dakiko",
-    technologies: ["Laravel", "Next.js", "RESTful API", "PostgreSQL"],
-  },
-  {
     image: "images/projects/vize-crm.jpeg",
     title: "Vize Başvuru Yönetim Sistemi",
     slug: "vize-basvuru-yonetim-sistemi",

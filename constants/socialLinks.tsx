@@ -19,11 +19,5 @@ export const socialLinks: SocialLink[] = [
     label: "GitHub",
     icon: IconBrandGithub,
     href: "https://github.com/MertMustehlik",
-  },
-  {
-    type: "dakiko",
-    label: "Dakiko",
-    icon: IconBuilding,
-    href: "https://dakiko.app",
   }
 ];
